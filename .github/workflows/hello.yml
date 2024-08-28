@@ -1,0 +1,8 @@
+neme: Hello                         #
+on: push                            #
+jobs:
+  hello:
+    run-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world"
+      - uses: action/chekout@v4
